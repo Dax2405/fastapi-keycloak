@@ -1,0 +1,21 @@
+[project]
+name = "fastapi-keycloak"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "dax",email = "daxnavarrete@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "fastapi[standard] (>=0.115.11,<0.116.0)",
+    "python-keycloak (>=5.3.1,<6.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "fastapi_keycloak", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
